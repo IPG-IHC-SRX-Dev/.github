@@ -2,9 +2,6 @@ name: Bug Report
 description: File a bug report.
 title: "[Bug]: "
 labels: ["bug", "triage"]
-projects: ["Issue Template"]
-assignees:
-  - 
 body:
   - type: markdown
     attributes:
@@ -22,7 +19,7 @@ body:
     attributes:
        label: Environment Credentials
        description: Login credentials
-       placeholder: 
+       placeholder: username:password
        value: "**STAGING:** \n Username: \n Password: \n **CLIENT STAGING:** \n **PRODUCTION:** \n URL"
     validations:
        required: true
