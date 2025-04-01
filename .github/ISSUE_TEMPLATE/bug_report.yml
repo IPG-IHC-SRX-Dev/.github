@@ -59,7 +59,7 @@ body:
       default: 0
     validations:
       required: true
-       - type: dropdown
+  - type: dropdown
     id: BugTypes
     attributes:
       label: Bug Types
