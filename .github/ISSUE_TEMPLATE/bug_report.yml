@@ -1,1 +1,120 @@
-
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["Issue Template"]
+assignees:
+  - 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: Description
+    attributes:
+      label: Description
+      description: Summary of the bug
+    validations:
+      required: true
+  - type: textarea
+    id: EnvironmentsCredentials
+    attributes:
+       label: Environment Credentials
+       description: Login credentials
+       placeholder: 
+       value: "**STAGING:** \n Username: \n Password: \n **CLIENT STAGING:** \n **PRODUCTION:** \n URL"
+    validations:
+       required: true
+  - type: dropdown
+    id: EnvironmentDetails
+    attributes:
+      label: Environment Details
+      description: Environment Details
+      options:
+        - Staging
+        - Client staging
+        - Pre-prod
+        - Production
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Global
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: Devices
+    attributes:
+      label: What devices are you seeing the problem on?
+      multiple: true
+      options:
+        - Global
+        - Windows
+        - Mac
+        - Mobile
+        - Android
+        - Tablet
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: Steps
+    attributes:
+      label: Repro steps
+      description: Steps to recreate an issue
+      placeholder: Tell us what you see!
+      value:  "Page Name: \n Page URL: \n Steps to Recreate the bug: \n 1.GO to the site, page  \n 2.Scroll to CTA \n 3.Click button \n 4. Observe results \n Actual Result: Broken link \n Expected Result : Button should drive to Site Map page"
+    validations:
+       required: true
+  - type: textarea
+    id: WorkfrontURL
+    attributes:
+      label: Workfront URL
+      description: Workfront URL
+      placeholder: Workfront URL
+      value: "Workfront URL"
+    validations:
+      required: true
+  - type: dropdown
+    id: BugTypes
+    attributes:
+      label: Bug Types
+      description: Bug Types
+      options:
+        - Functional
+        - ADA Complaince
+        - Design
+        - Compatibility
+        - ETE Forms
+      default: 0
+    validations:
+       required: true
+  - type: dropdown
+    id: Priority
+    attributes:
+      label: Priority
+      description: Priority
+      options:
+        - High
+        - Medium
+        - Low
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: Comments
+    attributes:
+      label: Comments
+      description: Comments
+      render: shell
