@@ -86,15 +86,6 @@ body:
     validations:
       required: true
   - type: textarea
-    id: EnvironmentsCredentials
-    attributes:
-       label: Environment Credentials
-       description: Login credentials
-       placeholder: 
-       value: "**STAGING:** \n Username: \n Password: \n **CLIENT STAGING:** \n **PRODUCTION:** \n URL"
-    validations:
-       required: true
-  - type: textarea
     id: Steps
     attributes:
       label: Repro steps
@@ -103,15 +94,6 @@ body:
       value:  "Page Name: \n Page URL: \n Steps to Recreate the bug: \n 1.GO to the site, page  \n 2.Scroll to CTA \n 3.Click button \n 4. Observe results \n Actual Result: Broken link \n Expected Result : Button should drive to Site Map page"
     validations:
        required: true
-  - type: textarea
-    id: WorkfrontURL
-    attributes:
-      label: Workfront URL
-      description: Workfront URL
-      placeholder: Workfront URL
-      value: "Workfront URL"
-    validations:
-      required: true
   - type: textarea
     id: Comments
     attributes:
