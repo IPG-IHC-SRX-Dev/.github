@@ -35,7 +35,7 @@ body:
        placeholder: 
        value: "STAGING: \n Username: \n Password: \n **CLIENT STAGING:** \n **PRODUCTION:** \n URL"
     validations:
-       required: true
+       required: false
   - type: dropdown
     id: EnvironmentDetails
     attributes:
