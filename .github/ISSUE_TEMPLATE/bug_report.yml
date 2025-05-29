@@ -79,13 +79,12 @@ body:
     validations:
       required: true
  
-  - type: textarea
+  - type: input
     id: WorkfrontURL
     attributes:
       label: Workfront URL
       description: Workfront URL
       placeholder: Workfront URL
-      value: "Workfront URL"
     validations:
       required: true
   - type: dropdown
