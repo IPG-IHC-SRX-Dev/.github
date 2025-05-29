@@ -8,14 +8,34 @@ body:
   - type: markdown
     attributes:
       value: |
-        Add a bug title
-  - type: input
-    id: Description
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: Summary
     attributes:
-      label: Description
-      description: Summary of the bug
+      label: Summary
+      description: Summary of the issue
+      placeholder: 
+      value:
     validations:
       required: true
+  - type: textarea
+    id: Steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to recreate this issue
+      placeholder: Tell us what you see!
+      value:
+    validations:
+       required: false
+  - type: textarea
+    id: EnvironmentsCredentials
+    attributes:
+       label: Environment Credentials
+       description: Login credentials
+       placeholder: 
+       value: "STAGING: \n Username: \n Password: \n **CLIENT STAGING:** \n **PRODUCTION:** \n URL"
+    validations:
+       required: true
   - type: dropdown
     id: EnvironmentDetails
     attributes:
@@ -58,6 +78,16 @@ body:
       default: 0
     validations:
       required: true
+ 
+  - type: textarea
+    id: WorkfrontURL
+    attributes:
+      label: Workfront URL
+      description: Workfront URL
+      placeholder: Workfront URL
+      value: "Workfront URL"
+    validations:
+      required: true
   - type: dropdown
     id: BugTypes
     attributes:
@@ -69,7 +99,7 @@ body:
         - Design
         - Compatibility
         - ETE Forms
-      default: 0
+      default: 2
     validations:
        required: true
   - type: dropdown
@@ -78,21 +108,12 @@ body:
       label: Priority
       description: Priority
       options:
-        - High
         - Medium
+        - High
         - Low
       default: 0
     validations:
       required: true
-  - type: textarea
-    id: Steps
-    attributes:
-      label: Repro steps
-      description: Steps to recreate an issue
-      placeholder: Tell us what you see!
-      value:  "Page Name: \n Page URL: \n Steps to Recreate the bug: \n 1.GO to the site, page  \n 2.Scroll to CTA \n 3.Click button \n 4. Observe results \n Actual Result: Broken link \n Expected Result : Button should drive to Site Map page"
-    validations:
-       required: true
   - type: textarea
     id: Comments
     attributes:
