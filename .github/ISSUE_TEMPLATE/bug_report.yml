@@ -7,35 +7,16 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+      value: Title
   - type: textarea
     id: Summary
     attributes:
-      label: Summary
+      label: Description
       description: Summary of the issue
       placeholder: 
       value:
     validations:
       required: true
-  - type: textarea
-    id: Steps
-    attributes:
-      label: Steps to Reproduce
-      description: Steps to recreate this issue
-      placeholder: Tell us what you see!
-      value:
-    validations:
-       required: false
-  - type: textarea
-    id: EnvironmentsCredentials
-    attributes:
-       label: Environment Credentials
-       description: Login credentials
-       placeholder: 
-       value: "STAGING: \n Username: \n Password: \n **CLIENT STAGING:** \n **PRODUCTION:** \n URL"
-    validations:
-       required: false
   - type: dropdown
     id: EnvironmentDetails
     attributes:
@@ -78,16 +59,7 @@ body:
       default: 0
     validations:
       required: true
- 
-  - type: input
-    id: WorkfrontURL
-    attributes:
-      label: Workfront URL
-      description: Workfront URL
-      placeholder: Workfront URL
-    validations:
-      required: true
-  - type: dropdown
+      - type: dropdown
     id: BugTypes
     attributes:
       label: Bug Types
@@ -113,6 +85,23 @@ body:
       default: 0
     validations:
       required: true
+  - type: textarea
+    id: Steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to recreate this issue
+      placeholder: Tell us what you see!
+      value:
+    validations:
+       required: true
+  - type: input
+    id: WorkfrontURL
+    attributes:
+      label: Workfront URL
+      description: Workfront URL
+      placeholder: Workfront URL
+    validations:
+      required: false
   - type: textarea
     id: Comments
     attributes:
