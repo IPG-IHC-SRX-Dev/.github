@@ -7,9 +7,10 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: Title
-  - type: textarea
-    id: Summary
+      value: |
+      Add a bug title
+  - type: input
+    id: Description
     attributes:
       label: Description
       description: Summary of the issue
