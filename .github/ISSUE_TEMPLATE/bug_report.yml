@@ -8,14 +8,11 @@ body:
   - type: markdown
     attributes:
       value: |
-      Add a bug title
   - type: input
     id: Description
     attributes:
       label: Description
       description: Summary of the issue
-      placeholder: 
-      value:
     validations:
       required: true
   - type: dropdown
