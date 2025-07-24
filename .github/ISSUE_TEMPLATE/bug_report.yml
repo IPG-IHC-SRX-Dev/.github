@@ -5,10 +5,6 @@ projects: ["Issue Template"]
 assignees:
   - 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Add a bug title
   - type: input
     id: Description
     attributes:
