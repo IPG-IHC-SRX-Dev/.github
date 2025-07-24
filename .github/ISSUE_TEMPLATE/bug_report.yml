@@ -7,7 +7,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: |
+      value:
   - type: input
     id: Description
     attributes:
