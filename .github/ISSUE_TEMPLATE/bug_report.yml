@@ -1,6 +1,6 @@
 name: SRX_QA_Bug_template
 description: File a bug report.
-title: "[Bug]: "
+title: 
 labels: ["bug", "triage"]
 projects: ["Issue Template"]
 assignees:
